@@ -1,4 +1,4 @@
-name: Versionize Release
+name: Versionize
 
 on:
   workflow_dispatch:
@@ -35,7 +35,7 @@ jobs:
             versionize
           else
             branch="${GITHUB_REF##*/}"
-            versionize --pre-release "$branch"
+            versionize --pre-release "$branch" --bump patch
           fi
         continue-on-error: true
 
