@@ -17,6 +17,11 @@
     <ReadmeFile>../README.md</ReadmeFile>
   </PropertyGroup>
 
+  <Target Name="CopyLicenseAndReadme" BeforeTargets="Pack">
+    <Copy SourceFiles="..\LICENSE.txt" DestinationFiles="$(OutputPath)LICENSE.txt" />
+    <Copy SourceFiles="..\README.md" DestinationFiles="$(OutputPath)README.md" />
+  </Target>
+
   <ItemGroup>
     <None Include="..\LICENSE.txt" Pack="true" PackagePath="" />
     <None Include="..\README.md" Pack="true" PackagePath="" />
