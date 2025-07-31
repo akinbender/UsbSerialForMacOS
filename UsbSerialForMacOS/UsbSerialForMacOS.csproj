@@ -13,8 +13,8 @@
     <PackageTags>serial;macos;maccatalyst;usb;binding;dotnet</PackageTags>
     <RepositoryUrl>https://github.com/akinbender/UsbSerialForMacOS</RepositoryUrl>
     <PackageProjectUrl>https://github.com/akinbender/UsbSerialForMacOS</PackageProjectUrl>
-    <PackageLicenseFile>../LICENSE.txt</PackageLicenseFile>
-    <ReadmeFile>../README.md</ReadmeFile>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <ReadmeFile>README.md</ReadmeFile>
   </PropertyGroup>
 
   <Target Name="CopyLicenseAndReadme" BeforeTargets="Pack">
