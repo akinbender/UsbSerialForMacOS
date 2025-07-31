@@ -35,7 +35,7 @@ jobs:
             versionize
           else
             branch="${GITHUB_REF##*/}"
-            versionize --pre-release "$branch" --bump patch
+            versionize --pre-release "$branch"
           fi
         continue-on-error: true
 
