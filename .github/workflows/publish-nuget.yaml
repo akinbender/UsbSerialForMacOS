@@ -1,0 +1,50 @@
+name: Publish NuGet Package
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+      - 'v*.*.*-*'
+
+jobs:
+  publish:
+    runs-on: macos-15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.x'
+
+      - name: Set up Xcode
+        run: sudo xcode-select -s /Applications/Xcode_16.4.app
+
+      - name: Build native XCFramework
+        run: |
+          cd UsbSerialForMacOS/Native
+          ./build-native.sh
+
+      - name: Install .NET workloads
+        run: |
+          dotnet workload install macos
+          dotnet workload install maccatalyst
+
+      - name: Build binding and pack NuGet
+        run: |
+          cd UsbSerialForMacOS
+          dotnet build -c Release
+          dotnet pack -c Release -o ./nupkg
+
+      - name: Release Artifact
+        uses: softprops/action-gh-release@v2
+        if: github.ref_type == 'tag'
+        with:
+          body_path: ${{ github.workspace }}/CHANGELOG.md
+          make_latest: true
+          files: UsbSerialForMacOS/nupkg/*.nupkg
+
+      - name: Push to NuGet
+        run: dotnet nuget push UsbSerialForMacOS/nupkg/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json

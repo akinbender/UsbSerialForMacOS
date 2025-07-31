@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UsbSerialForMacOS.MauiSample.MainPage">
+    <Grid RowDefinitions="Auto,Auto,Auto,*" Padding="20" RowSpacing="15">
+        <!-- Port Selection -->
+        <VerticalStackLayout Grid.Row="0" Spacing="10">
+            <Label Text="Select Serial Port"/>
+            <Grid ColumnDefinitions="*,10,Auto">
+                <Picker x:Name="portPicker"
+                        Grid.Column="0"/>
+                <Button x:Name="refreshButton"
+                        Text="⟳"
+                        Clicked="OnRefreshPortsClicked"
+                        WidthRequest="40"
+                        Grid.Column="2"/>
+            </Grid>
+        </VerticalStackLayout>
+        
+        <!-- Baud Rate -->
+        <VerticalStackLayout Grid.Row="1" Spacing="10">
+            <Label Text="Select Baud rate" />
+            <Picker x:Name="baudPicker" 
+                    SelectedIndex="0"
+                    VerticalOptions="Center">
+                    <Picker.Items>
+                    <x:String>9600</x:String>
+                    <x:String>19200</x:String>
+                    <x:String>38400</x:String>
+                    <x:String>57600</x:String>
+                    <x:String>115200</x:String>
+                </Picker.Items>
+            </Picker>
+        </VerticalStackLayout>
+        <!-- Connection Controls -->
+        <Grid ColumnDefinitions="*,15,*" Grid.Row="2">
+            <Button x:Name="connectButton" Text="Connect"  
+                    Clicked="OnConnectClicked"  
+                    Grid.Column="0"/>
+            <Button x:Name="disconnectButton" Text="Disconnect"  
+                    IsEnabled="False"  
+                    Clicked="OnDisconnectClicked"  
+                    Grid.Column="2"/>
+        </Grid>
+
+        <!-- Terminal Area (Expands to fill remaining space) -->
+        <Border BackgroundColor="Black" Padding="10" Grid.Row="3">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="12"/>
+            </Border.StrokeShape>
+            <Grid RowDefinitions="*,Auto">
+                <!-- Terminal Output (Expanding ScrollView) -->
+                <ScrollView x:Name="scrollView" Grid.Row="0">
+                    <Label x:Name="terminalOutput"  
+                           TextColor="LawnGreen"  
+                           FontFamily="Courier" />
+                </ScrollView>
+                
+                <!-- Command Input -->
+                <Grid ColumnDefinitions="*,Auto" Grid.Row="1" Padding="0,5">
+                    <Entry x:Name="commandEntry"  
+                           Placeholder="Enter command..."  
+                           Completed="OnSendCommand"
+                           BackgroundColor="Black"
+                           Grid.Column="0"/>
+                    <Button x:Name="sendButton"
+                            Text="Send"  
+                            IsEnabled="False"
+                            Clicked="OnSendCommand"  
+                            Grid.Column="1"
+                            Margin="5,0,0,0"/>
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</ContentPage>

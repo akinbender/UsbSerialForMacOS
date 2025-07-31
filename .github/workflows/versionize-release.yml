@@ -1,0 +1,48 @@
+name: Versionize Release
+
+on:
+  workflow_dispatch:
+
+jobs:
+  versionize:
+    runs-on: macos-15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: '0'
+          token: ${{ secrets.PAT }}
+          persist-credentials: false
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.x'
+
+      - name: Install versionize
+        run: dotnet tool install --global versionize
+        
+      - name: Setup git
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+      - name: Versionize Release
+        id: versionize
+        run: |
+          if [[ "${GITHUB_REF##*/}" == "main" ]]; then
+            versionize
+          else
+            branch="${GITHUB_REF##*/}"
+            versionize --pre-release "$branch"
+          fi
+        continue-on-error: true
+
+      - name: Push changes to GitHub
+        if: steps.versionize.outcome == 'success'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.PAT }}
+          branch: ${{ github.ref }}
+          tags: true

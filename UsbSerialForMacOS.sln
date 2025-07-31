@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsbSerialForMacOS.MauiSample", "UsbSerialForMacOS.MauiSample\UsbSerialForMacOS.MauiSample.csproj", "{73500B0B-8767-4834-BD5E-470946D77EBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsbSerialForMacOS", "UsbSerialForMacOS\UsbSerialForMacOS.csproj", "{A430124B-86D7-452A-9DDA-3497288CC552}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73500B0B-8767-4834-BD5E-470946D77EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73500B0B-8767-4834-BD5E-470946D77EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73500B0B-8767-4834-BD5E-470946D77EBC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{73500B0B-8767-4834-BD5E-470946D77EBC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{73500B0B-8767-4834-BD5E-470946D77EBC}.Debug|x64.Build.0 = Debug|Any CPU
+		{73500B0B-8767-4834-BD5E-470946D77EBC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{73500B0B-8767-4834-BD5E-470946D77EBC}.Debug|x86.Build.0 = Debug|Any CPU
+		{73500B0B-8767-4834-BD5E-470946D77EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73500B0B-8767-4834-BD5E-470946D77EBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73500B0B-8767-4834-BD5E-470946D77EBC}.Release|x64.ActiveCfg = Release|Any CPU
+		{73500B0B-8767-4834-BD5E-470946D77EBC}.Release|x64.Build.0 = Release|Any CPU
+		{73500B0B-8767-4834-BD5E-470946D77EBC}.Release|x86.ActiveCfg = Release|Any CPU
+		{73500B0B-8767-4834-BD5E-470946D77EBC}.Release|x86.Build.0 = Release|Any CPU
+		{A430124B-86D7-452A-9DDA-3497288CC552}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A430124B-86D7-452A-9DDA-3497288CC552}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A430124B-86D7-452A-9DDA-3497288CC552}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A430124B-86D7-452A-9DDA-3497288CC552}.Debug|x64.Build.0 = Debug|Any CPU
+		{A430124B-86D7-452A-9DDA-3497288CC552}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A430124B-86D7-452A-9DDA-3497288CC552}.Debug|x86.Build.0 = Debug|Any CPU
+		{A430124B-86D7-452A-9DDA-3497288CC552}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A430124B-86D7-452A-9DDA-3497288CC552}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A430124B-86D7-452A-9DDA-3497288CC552}.Release|x64.ActiveCfg = Release|Any CPU
+		{A430124B-86D7-452A-9DDA-3497288CC552}.Release|x64.Build.0 = Release|Any CPU
+		{A430124B-86D7-452A-9DDA-3497288CC552}.Release|x86.ActiveCfg = Release|Any CPU
+		{A430124B-86D7-452A-9DDA-3497288CC552}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3F60B1D8-D121-48FB-A76D-D7AA3FABB0DF}
+	EndGlobalSection
+EndGlobal
