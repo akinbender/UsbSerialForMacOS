@@ -62,10 +62,18 @@ lipo -create \
   build/maccatalyst/x86_64/UsbSerialForMacOS.framework/UsbSerialForMacOS \
   -output $FAT_MACCATALYST_DIR/UsbSerialForMacOS.framework/UsbSerialForMacOS
 
+# Remove Headers, Modules, and Versions (including symlinks) from the root of each universal framework before creating the XCFramework
+for fwdir in "$FAT_MACOS_DIR/UsbSerialForMacOS.framework" "$FAT_MACCATALYST_DIR/UsbSerialForMacOS.framework"; do
+  find "$fwdir" -maxdepth 1 -type l \( -name 'Headers' -o -name 'Modules' -o -name 'Versions' \) -exec rm -f {} +
+  find "$fwdir" -maxdepth 1 -type d \( -name 'Headers' -o -name 'Modules' -o -name 'Versions' \) -exec rm -rf {} +
+done
+
 # Create XCFramework
 xcodebuild -create-xcframework \
   -framework build/macos/universal/UsbSerialForMacOS.framework \
   -framework build/maccatalyst/universal/UsbSerialForMacOS.framework \
   -output UsbSerialForMacOS.xcframework
+
+find UsbSerialForMacOS.xcframework -name _CodeSignature -type d -exec rm -rf {} +
 
 echo "XCFramework created at UsbSerialForMacOS.xcframework"
