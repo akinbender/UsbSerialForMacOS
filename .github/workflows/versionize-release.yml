@@ -1,4 +1,4 @@
-name: Versionize Release
+name: Versionize
 
 on:
   workflow_dispatch:
