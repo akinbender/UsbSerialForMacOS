@@ -14,7 +14,7 @@
     <RepositoryUrl>https://github.com/akinbender/UsbSerialForMacOS</RepositoryUrl>
     <PackageProjectUrl>https://github.com/akinbender/UsbSerialForMacOS</PackageProjectUrl>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-    <ReadmeFile>README.md</ReadmeFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <Target Name="CopyLicenseAndReadme" BeforeTargets="Pack">
