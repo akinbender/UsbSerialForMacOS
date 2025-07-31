@@ -31,4 +31,6 @@ xcodebuild -create-xcframework \
   -framework build/maccatalyst/x86_64/UsbSerialForMacOS.framework \
   -output UsbSerialForMacOS.xcframework
 
+find UsbSerialForMacOS.xcframework -name _CodeSignature -type d -exec rm -rf {} +
+
 echo "XCFramework created at UsbSerialForMacOS.xcframework"
