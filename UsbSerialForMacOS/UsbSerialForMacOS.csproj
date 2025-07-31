@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>net8.0-macos;net8.0-maccatalyst</TargetFrameworks>
@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <IsBindingProject>true</IsBindingProject>
-    <Version>0.8.0</Version>
+    <Version>0.8.1-test-prerelease.0</Version>
     <Authors>Akın Bender</Authors>
     <PackageId>UsbSerialForMacOS</PackageId>
     <Description>.NET binding for native Swift serial port library for macOS and Mac Catalyst.</Description>
