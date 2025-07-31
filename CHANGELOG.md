@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.9.0-test-prerelease.1"></a>
+## [0.9.0-test-prerelease.1](https://www.github.com/akinbender/UsbSerialForMacOS/releases/tag/v0.9.0-test-prerelease.1) (2025-07-31)
+
+### Bug Fixes
+
+* push to nuget ([9bb0b01](https://www.github.com/akinbender/UsbSerialForMacOS/commit/9bb0b01d0995f60307212df0a204ee37348c66c9))
+
 <a name="0.9.0-test-prerelease.0"></a>
 ## [0.9.0-test-prerelease.0](https://www.github.com/akinbender/UsbSerialForMacOS/releases/tag/v0.9.0-test-prerelease.0) (2025-07-31)
 

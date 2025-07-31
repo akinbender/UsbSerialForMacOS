@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <IsBindingProject>true</IsBindingProject>
-    <Version>0.9.0-test-prerelease.0</Version>
+    <Version>0.9.0-test-prerelease.1</Version>
     <Authors>Akın Bender</Authors>
     <PackageId>UsbSerialForMacOS</PackageId>
     <Description>.NET binding for native Swift serial port library for macOS and Mac Catalyst.</Description>
