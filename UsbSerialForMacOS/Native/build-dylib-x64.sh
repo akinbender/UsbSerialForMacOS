@@ -4,7 +4,10 @@ set -e
 
 # Clean previous builds
 envdir=build/dylib
-rm -rf $envdir
+rm -rf build
+rm -rf UsbSerialForMacOS.framework
+rm -rf UsbSerialForMacOS.xcframework
+
 mkdir -p $envdir/arm64 $envdir/x86_64 $envdir/universal
 
 # Build for Mac Catalyst x86_64 as .dylib
