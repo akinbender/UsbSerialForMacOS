@@ -46,8 +46,8 @@
   </ItemGroup>
   
 <ItemGroup>
-  <NativeReference Include="Native/UsbSerialForMacOS.xcframework/macos-x86_64/libUsbSerialForMacOS.dylib" Kind="Dynamic" Condition="'$(TargetFramework)' == 'net8.0-macos'" />
-  <NativeReference Include="Native/UsbSerialForMacOS.xcframework/ios-x86_64-maccatalyst/libUsbSerialForMacOS.dylib" Kind="Dynamic" Condition="'$(TargetFramework)' == 'net8.0-maccatalyst'" />
+  <NativeReference Include="Native/build/dylib/macos/x86_64/libUsbSerialForMacOS.dylib" Kind="Dynamic" Condition="'$(TargetFramework)' == 'net8.0-macos'" />
+  <NativeReference Include="Native/build/dylib/maccatalyst/x86_64/libUsbSerialForMacOS.dylib" Kind="Dynamic" Condition="'$(TargetFramework)' == 'net8.0-maccatalyst'" />
 </ItemGroup>
   
 </Project>

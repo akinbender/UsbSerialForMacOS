@@ -85,5 +85,5 @@ xcodebuild -create-xcframework \
   -output UsbSerialForMacOS.xcframework
 
 echo "Universal .dylib created at:"
-echo "  $envdir/macos/universal/UsbSerialForMacOS.dylib (macOS)"
-echo "  $envdir/maccatalyst/universal/UsbSerialForMacOS.dylib (Mac Catalyst)"
+echo "  $envdir/macos/UsbSerialForMacOS.dylib (macOS)"
+echo "  $envdir/maccatalyst/UsbSerialForMacOS.dylib (Mac Catalyst)"
