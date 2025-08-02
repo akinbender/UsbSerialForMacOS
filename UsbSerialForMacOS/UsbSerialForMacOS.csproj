@@ -45,8 +45,9 @@
     <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
   </ItemGroup>
   
-  <ItemGroup>
-    <NativeReference Include="native/UsbSerialForMacOS.xcframework" Kind="Framework" />
-  </ItemGroup>
+<ItemGroup>
+  <NativeReference Include="Native/UsbSerialForMacOS.xcframework/macos-x86_64/libUsbSerialForMacOS.dylib" Kind="Dynamic" Condition="'$(TargetFramework)' == 'net8.0-macos'" />
+  <NativeReference Include="Native/UsbSerialForMacOS.xcframework/ios-x86_64-maccatalyst/libUsbSerialForMacOS.dylib" Kind="Dynamic" Condition="'$(TargetFramework)' == 'net8.0-maccatalyst'" />
+</ItemGroup>
   
 </Project>
