@@ -75,8 +75,8 @@ xcodebuild -scheme UsbSerialForMacOS \
 
 # Combine into universal Mac Catalyst .dylib
 lipo -create \
-  $envdir/maccatalyst/arm64/UsbSerialForMacOS.dylib \
-  $envdir/maccatalyst/x86_64/UsbSerialForMacOS.dylib \
+  $envdir/maccatalyst/arm64/libUsbSerialForMacOS.dylib \
+  $envdir/maccatalyst/x86_64/libUsbSerialForMacOS.dylib \
   -output $envdir/maccatalyst/UsbSerialForMacOS.dylib
 
 xcodebuild -create-xcframework \
