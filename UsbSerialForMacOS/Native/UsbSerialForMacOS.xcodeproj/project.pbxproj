@@ -7,32 +7,19 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		8282F9592E36B9C900AE2839 /* UsbSerialForMacOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UsbSerialForMacOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		825383582E3E340B00F62FAA /* libUsbSerialForMacOS.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libUsbSerialForMacOS.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		8282F95E2E36B9C900AE2839 /* Exceptions for "UsbSerialForMacOS" folder in "UsbSerialForMacOS" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			publicHeaders = (
-				UsbSerialForMacOS.h,
-			);
-			target = 8282F9582E36B9C900AE2839 /* UsbSerialForMacOS */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		8282F95B2E36B9C900AE2839 /* UsbSerialForMacOS */ = {
+		8253835E2E3E342C00F62FAA /* UsbSerialForMacOS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				8282F95E2E36B9C900AE2839 /* Exceptions for "UsbSerialForMacOS" folder in "UsbSerialForMacOS" target */,
-			);
 			path = UsbSerialForMacOS;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8282F9562E36B9C900AE2839 /* Frameworks */ = {
+		825383562E3E340B00F62FAA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,23 +32,15 @@
 		8282F94F2E36B9C900AE2839 = {
 			isa = PBXGroup;
 			children = (
-				8282F95B2E36B9C900AE2839 /* UsbSerialForMacOS */,
-				8282F95A2E36B9C900AE2839 /* Products */,
+				825383582E3E340B00F62FAA /* libUsbSerialForMacOS.dylib */,
+				8253835E2E3E342C00F62FAA /* UsbSerialForMacOS */,
 			);
-			sourceTree = "<group>";
-		};
-		8282F95A2E36B9C900AE2839 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8282F9592E36B9C900AE2839 /* UsbSerialForMacOS.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		8282F9542E36B9C900AE2839 /* Headers */ = {
+		825383542E3E340B00F62FAA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -71,28 +50,27 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8282F9582E36B9C900AE2839 /* UsbSerialForMacOS */ = {
+		825383572E3E340B00F62FAA /* UsbSerialForMacOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8282F95F2E36B9C900AE2839 /* Build configuration list for PBXNativeTarget "UsbSerialForMacOS" */;
+			buildConfigurationList = 825383592E3E340B00F62FAA /* Build configuration list for PBXNativeTarget "UsbSerialForMacOS" */;
 			buildPhases = (
-				8282F9542E36B9C900AE2839 /* Headers */,
-				8282F9552E36B9C900AE2839 /* Sources */,
-				8282F9562E36B9C900AE2839 /* Frameworks */,
-				8282F9572E36B9C900AE2839 /* Resources */,
+				825383542E3E340B00F62FAA /* Headers */,
+				825383552E3E340B00F62FAA /* Sources */,
+				825383562E3E340B00F62FAA /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				8282F95B2E36B9C900AE2839 /* UsbSerialForMacOS */,
+				8253835E2E3E342C00F62FAA /* UsbSerialForMacOS */,
 			);
 			name = UsbSerialForMacOS;
 			packageProductDependencies = (
 			);
 			productName = UsbSerialForMacOS;
-			productReference = 8282F9592E36B9C900AE2839 /* UsbSerialForMacOS.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = 825383582E3E340B00F62FAA /* libUsbSerialForMacOS.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
 
@@ -103,9 +81,8 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
-					8282F9582E36B9C900AE2839 = {
+					825383572E3E340B00F62FAA = {
 						CreatedOnToolsVersion = 16.4;
-						LastSwiftMigration = 1640;
 					};
 				};
 			};
@@ -119,27 +96,17 @@
 			mainGroup = 8282F94F2E36B9C900AE2839;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 8282F95A2E36B9C900AE2839 /* Products */;
+			productRefGroup = 8282F94F2E36B9C900AE2839;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8282F9582E36B9C900AE2839 /* UsbSerialForMacOS */,
+				825383572E3E340B00F62FAA /* UsbSerialForMacOS */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		8282F9572E36B9C900AE2839 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		8282F9552E36B9C900AE2839 /* Sources */ = {
+		825383552E3E340B00F62FAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -149,71 +116,32 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		8282F9602E36B9C900AE2839 /* Debug */ = {
+		8253835A2E3E340B00F62FAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = akinbender.UsbSerialForMacOS;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
-		8282F9612E36B9C900AE2839 /* Release */ = {
+		8253835B2E3E340B00F62FAA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = akinbender.UsbSerialForMacOS;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
@@ -251,6 +179,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -277,6 +206,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -315,6 +245,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -334,6 +265,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -342,20 +274,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		825383592E3E340B00F62FAA /* Build configuration list for PBXNativeTarget "UsbSerialForMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8253835A2E3E340B00F62FAA /* Debug */,
+				8253835B2E3E340B00F62FAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8282F9532E36B9C900AE2839 /* Build configuration list for PBXProject "UsbSerialForMacOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8282F9622E36B9C900AE2839 /* Debug */,
 				8282F9632E36B9C900AE2839 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8282F95F2E36B9C900AE2839 /* Build configuration list for PBXNativeTarget "UsbSerialForMacOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8282F9602E36B9C900AE2839 /* Debug */,
-				8282F9612E36B9C900AE2839 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
