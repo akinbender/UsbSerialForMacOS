@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.9.1-test-prerelease.4"></a>
+## [0.9.1-test-prerelease.4](https://www.github.com/akinbender/UsbSerialForMacOS/releases/tag/v0.9.1-test-prerelease.4) (2025-08-02)
+
+### Bug Fixes
+
+* build dylib ([2f46530](https://www.github.com/akinbender/UsbSerialForMacOS/commit/2f46530a48c3b886f6a69f4eca7f40a3d7b5221a))
+
 <a name="0.9.1-test-prerelease.3"></a>
 ## [0.9.1-test-prerelease.3](https://www.github.com/akinbender/UsbSerialForMacOS/releases/tag/v0.9.1-test-prerelease.3) (2025-08-02)
 
