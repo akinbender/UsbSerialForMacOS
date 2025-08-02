@@ -79,6 +79,8 @@ xcodebuild -create-xcframework \
   -library build/dylib/maccatalyst/UsbSerialForMacOS.dylib \
   -output UsbSerialForMacOS.xcframework
 
+codesign --force --sign - --deep UsbSerialForMacOS.xcframework
+
 echo "Universal .dylib created at:"
 echo "  $envdir/macos/universal/UsbSerialForMacOS.dylib (macOS)"
 echo "  $envdir/maccatalyst/universal/UsbSerialForMacOS.dylib (Mac Catalyst)"
