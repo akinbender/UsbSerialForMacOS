@@ -46,3 +46,4 @@ jobs:
           github_token: ${{ secrets.PAT }}
           branch: ${{ github.ref }}
           tags: true
+          force: true
