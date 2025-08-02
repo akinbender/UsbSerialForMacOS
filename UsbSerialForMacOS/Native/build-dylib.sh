@@ -10,6 +10,11 @@ rm -rf UsbSerialForMacOS.xcframework
 mkdir -p $envdir/macos/arm64 $envdir/macos/x86_64 $envdir/macos/universal
 mkdir -p $envdir/maccatalyst/arm64 $envdir/maccatalyst/x86_64 $envdir/maccatalyst/universal
 
+xattr -w com.apple.xcode.CreatedByBuildSystem true build/dylib/macos/arm64 || true
+xattr -w com.apple.xcode.CreatedByBuildSystem true build/dylib/macos/x86_64 || true
+xattr -w com.apple.xcode.CreatedByBuildSystem true build/dylib/maccatalyst/arm64 || true
+xattr -w com.apple.xcode.CreatedByBuildSystem true build/dylib/maccatalyst/x86_64 || true
+
 # Build for macOS arm64 as .dylib
 xcodebuild -scheme UsbSerialForMacOS \
   -sdk macosx \
